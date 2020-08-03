@@ -1,0 +1,55 @@
+.primary-container{margin:0px;width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 15px;
+   max-width: 1024px;
+   margin: auto;
+  }
+  .main{border: 0px solid #ccc; height:auto;}
+  .right-panel{display: none;}
+
+  .intro-title{display:inline-block;font-size:24px;padding:30px 20px;}
+
+
+
+  .single-app{
+    display: grid;
+    grid-template-columns: auto;
+    border:1px solid #e9e9e9;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 3px;
+  }
+  .single-app:hover{box-shadow: 0 4px 10px 0 rgba(0,0,0,.3);}
+  .app-icon{padding:10px;text-align: center;}
+  .icon-img{width:100%;max-width: 200px;border: 0px solid red;}
+  .app-title{color:#333; font-size: 20px; padding:20px;}
+  .desc{color:#333; font-size: 16px;padding: 20px;}
+
+
+
+  @media only screen and (min-width: 420px)
+
+{
+  .single-app{width: 80%;margin:auto;}
+  .apps-holder{padding: 0px 20px;}
+
+}
+
+
+
+  @media only screen and (min-width: 720px)
+
+{
+  .single-app{grid-template-columns: 25% 75%;width: 100%; margin:20px 0px 10px 0px;}
+
+}
+
+
+  @media only screen and (min-width: 810px)
+
+{
+
+  .primary-container{margin-top:10px;grid-template-columns: auto 20%;}
+  .right-panel{display: block;border: 1px dashed #ccc;}
+
+}
